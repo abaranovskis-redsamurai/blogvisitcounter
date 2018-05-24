@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="HrModule"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="BlogStatsView1"
+    ViewObjectName="com.redsamurai.counter.model.views.BlogStatsView"/>
+  <ViewUsage
+    Name="BlogStatsEntryView1"
+    ViewObjectName="com.redsamurai.counter.model.views.BlogStatsEntryView"/>
+</AppModule>

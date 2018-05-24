@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="HrModule_BlogStatsViewResources"
+                Package="com.redsamurai.counter.model.services.rest.v1" usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="BlogStatsView1" RangeSize="1" DataControl="HrModuleDataControl" id="BlogStatsView1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="BlogStatsView1Iter" id="BlogStatsView" AccessorFolder="Always">
+      <nodeDefinition DefName="com.redsamurai.counter.model.views.BlogStatsView"
+                      Name="com.redsamurai.counter.model.views.BlogStatsView">
+        <Actions>
+          <Action Name="update" Enabled="#{false}"/>
+          <Action Name="delete" Enabled="#{false}"/>
+          <Action Name="create" Enabled="#{false}"/>
+        </Actions>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

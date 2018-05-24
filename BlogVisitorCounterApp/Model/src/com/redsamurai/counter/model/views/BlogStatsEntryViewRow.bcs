@@ -1,0 +1,19 @@
+//Groovy Scripts for com.redsamurai.counter.model.views.BlogStatsEntryView
+
+package com.redsamurai.counter.model.views
+
+import oracle.jbo.script.annotation.TransientValueExpression;
+
+@TransientValueExpression(attributeName="Id")
+def Id_ExpressionScript_Expression()
+{
+(new oracle.jbo.server.SequenceImpl("BLOG_STATS_SEQ", adf.object.getDBTransaction())).getSequenceNumber()
+}
+
+
+@TransientValueExpression(attributeName="AccessTime")
+def AccessTime_ExpressionScript_Expression()
+{
+adf.currentDateTime
+}
+
